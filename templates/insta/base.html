@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Instagram</title>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'css/insta.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+
+            <div class="instalogo">
+                <a href="/" class=""><i class="fab fa-instagram"></i></a>
+                <a href="/" class="vl"></a>
+                <a href="/">Instagram</a>
+            </div>
+
+            <div class="search_bar"> 
+                <input type="text" placeholder="search">
+                <a href="" class="search"><i class="fas fa-search"></i></a>
+            </div> 
+
+            <div class="contact_icons">
+                <a href="/" class="explore"><i class="far fa-compass"></i></a>
+                <a href="/" class="likes"><i class="far fa-heart"></i></a> 
+                <a href="/" class="profile"><i class="far fa-user"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="content_container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+</body>
+</html>
